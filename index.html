@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>استغفار - صدقة جارية</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: url('https://via.placeholder.com/1920x1080.png?text=Sky+Background') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      margin-top: 20%;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    button {
+      font-size: 1.5em;
+      padding: 10px 20px;
+      border: none;
+      background-color: #008CBA;
+      color: white;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #005F73;
+    }
+    .count {
+      font-size: 2em;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>استغفر الله العظيم</h1>
+    <p>صدقة جارية عن روح المرحوم: إسلام محمد أحمد عبدالعزيز</p>
+    <button onclick="increaseCount()">اضغط للاستغفار</button>
+    <div class="count" id="count">0</div>
+  </div>
+
+  <script>
+    let count = 0;
+    function increaseCount() {
+      count++;
+      document.getElementById('count').innerText = count;
+    }
+  </script>
+</body>
+</html>
